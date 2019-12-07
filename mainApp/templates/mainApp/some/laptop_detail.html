@@ -1,0 +1,19 @@
+{% extends 'mainApp/checkout.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<h3 class = "text-center"> {{laptop_detail.name}} </h3>
+<div class="column">
+  <p>{{laptop_detail.mpx}}Mpx </p>
+  </div>
+  <div class="column">
+    <p>{{laptop_detail.price}}tg </p>
+    </div>
+    <div class="column">
+      <img src="{{laptop_detail.image.url}}">
+      </div>
+      <div class="column">
+        <p>{{laptop_detail.memory}}GB</p>
+        </div>
+
+{% endblock %}

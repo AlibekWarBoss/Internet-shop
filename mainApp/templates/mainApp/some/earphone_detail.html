@@ -1,0 +1,19 @@
+{% extends 'mainApp/checkout.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<h3 class = "text-center"> {{earphone_detail.name}} </h3>
+<div class="column">
+  <p>{{earphone_detail.mpx}}Mpx </p>
+  </div>
+  <div class="column">
+    <p>{{earphone_detail.price}}tg </p>
+    </div>
+    <div class="column">
+      <img src="{{earphone_detail.image.url}}">
+      </div>
+      <div class="column">
+        <p>{{earphone_detail.memory}}GB</p>
+        </div>
+
+{% endblock %}
